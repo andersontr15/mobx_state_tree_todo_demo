@@ -4,7 +4,6 @@ import { generateRandomIntegerFromCrypto } from './utils';
 
 const defaultState = {
   id: generateRandomIntegerFromCrypto(),
-  selectedTodo: -1,
   todos: []
 };
 

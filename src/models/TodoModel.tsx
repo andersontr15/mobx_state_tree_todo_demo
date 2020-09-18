@@ -3,7 +3,7 @@ import { Instance, types } from "mobx-state-tree";
 
 export const TodoModel = types
   .model('TodoModel', {
-    id: types.identifierNumber,
+    id: types.identifier,
     name: types.string,
     completed: types.boolean,
   })
