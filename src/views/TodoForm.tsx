@@ -1,15 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { Button, FormGroup, FormControlLabel, Checkbox, Input, Box, Card, CardContent } from '@material-ui/core';
+import { Button, FormControlLabel, Checkbox, Input, Box, Card, CardContent } from '@material-ui/core';
 import { observer } from 'mobx-react';
 import { useStore } from '../contexts/mobx-context';
 
-
-
-interface Props {
-
-}
-
-export const TodoForm = observer((props: Props) => {
+export const TodoForm = observer(() => {
 
   const store = useStore();
 
@@ -42,7 +36,7 @@ export const TodoForm = observer((props: Props) => {
   }
 
   const onUpdateTodo = () => {
-    if(!store.selectedTodo) return;
+    if (!store.selectedTodo) return;
     const payload = {
       name: todoName,
       completed: todoCompletion
