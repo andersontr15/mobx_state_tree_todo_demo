@@ -9,7 +9,7 @@ interface Props {
 export const Todos = observer((props: Props) => {
   return (
     <div>
-      
+      hello
     </div>
   )
 })
